@@ -1,0 +1,360 @@
+body {
+  overflow-x: hidden;
+  position: relative;
+  min-width: 320px;
+}
+.main {
+  font-family: "Proxima Nova";
+  overflow: hidden;
+}
+
+.header {
+  position: fixed;
+  width: 100%;
+  padding: 0 40px;
+  height: 90px;
+  border-bottom: 5px solid #ee3d40;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #ffffff;
+  z-index: 5;
+}
+
+.menu {
+  display: flex;
+  align-items: center;
+}
+.nav ul a {
+  font-family: "Proxima Nova";
+  font-weight: 600;
+  color: #707070;
+  letter-spacing: 1px;
+  font-size: 16px;
+}
+.nav ul {
+  display: flex;
+  justify-content: space-between;
+}
+.nav ul li {
+  padding: 10px 22px;
+  transition: 0.2s;
+}
+.nav ul li a:hover {
+  transition: 0.2s;
+  cursor: pointer;
+  text-decoration: none;
+  color: $red;
+}
+.nav ul .active a {
+  color: $red;
+}
+.header_info {
+  display: flex;
+  align-items: center;
+}
+
+.header_info .data {
+  font-family: "Proxima Nova";
+  font-weight: 400;
+  font-size: 14px;
+  color: #b2b2b2;
+  margin-right: 25px;
+}
+.header_info .phone a {
+  font-family: "Proxima Nova";
+  font-size: 19px;
+  font-weight: 700;
+  opacity: 0.9;
+  color: #ee3d40;
+}
+.header_info .phone a:hover{
+  color: #eb0408;
+  transition: 0.3s;
+  opacity: 1;
+}
+//footer
+.footer {
+  min-height: 90px;
+  display: flex;
+  align-items: center;
+  border-top: 5px solid $red;
+  background-color: #ffffff;
+}
+.footer .wrap {
+  font-size: 14px;
+  padding: 30px 60px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.footer_polici a {
+  border-bottom: 1px solid $red;
+  color: $red;
+  opacity: 0.9;
+  text-decoration: none;
+}
+.footer_copi a{
+  text-decoration: none;
+  color: #333333;
+}
+.footer_copi a:hover{
+  text-decoration: underline;
+}
+.footer_polici a:hover {
+  text-decoration: none;
+  color: #ef1014;
+  transition: 0.3s;
+  opacity: 1;
+}
+.footer_autor {
+  color: #cccccc;
+  display: flex;
+  position: relative;
+}
+.footer_autor span {
+  margin-right: 70px;
+}
+.footer_logo {
+  color: #ffffff;
+  right: 0;
+  top: -11px;
+  width: 31px;
+  height: 60px;
+  background-color: $red;
+  text-align: center;
+  position: absolute;
+  padding-top: 15px;
+}
+.breadcrum ul {
+  display: flex;
+  align-items: center;
+  text-transform: uppercase;
+  font-size: 14px;
+  letter-spacing: 2px;
+  flex-wrap: wrap;
+}
+.breadcrum ul li {
+  margin-bottom: 5px;
+  margin-top: 5px;
+  font-size: 11px;
+}
+.breadcrum ul li a {
+  color: #939393;
+  text-decoration: none;
+  transition: 0.3s;
+}
+.breadcrum ul li a:hover{
+  color: $red;
+  transition: 0.3s;
+}
+.breadcrum ul li.last-child {
+  color: #333333;
+}
+.breadcrum ul li a:after {
+  content: "/";
+  color: #939393;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.wrap-fluid {
+  display: flex;
+}
+.item75 {
+  z-index: 2;
+  width: 75%;
+}
+.item50 {
+  z-index: 2;
+  width: 50%;
+}
+.item25 {
+  z-index: 2;
+  width: 25%;
+}
+.wrap {
+  z-index: 2;
+  position: relative;
+  display: flex;
+  width: 100%;
+  max-width: 1170px;
+  margin-right: auto;
+  margin-left: auto;
+}
+//адпатив
+.nav-mobile {
+  display: none;
+}
+.burger-menu {
+  display: none;
+}
+@media (max-width: 1400px) {
+  .wrap {
+    max-width: 1140px;
+  }
+  .nav ul li {
+    padding: 10px 10px;
+  }
+  .nav ul {
+    font-size: 14px;
+  }
+  .header_info .phone {
+    font-size: 14px;
+  }
+}
+@media (min-width: 1200px) and (max-width: 1245px) {
+  .nav ul a {
+    font-size: 14px;
+  }
+}
+@media (max-width: 1199px) {
+  .wrap {
+    max-width: 930px;
+  }
+  .header {
+    padding: 23px 15px;
+  }
+  .header_info {
+    flex-direction: column;
+    align-items: flex-end;
+  }
+  .header_info .data {
+    margin-right: 0;
+    margin-bottom: 15px;
+  }
+}
+@media (max-width: 1054px) {
+  .nav ul a {
+    font-size: 14px;
+  }
+}
+@media (max-width: 991px) {
+  .wrap {
+    width: 100%;
+  }
+  .nav ul {
+    font-size: 16px;
+  }
+  .header_info .data {
+    font-size: 16px;
+  }
+  .header_info .phone {
+    font-size: 16px;
+  }
+  .section-1-bottom.border:before {
+    left: 0;
+  }
+  .section-1 .item75 {
+    width: 100%;
+  }
+  .section-1 .text-block {
+    padding-left: 36px;
+    margin-left: 20px;
+    padding-right: 20px;
+  }
+  .header {
+    padding: 12px 15px;
+  }
+  .nav {
+    display: none;
+  }
+  .header_info {
+    display: none;
+  }
+  .section-1-bottom {
+    padding: 0 20px;
+  }
+  .section-1-bottom .num {
+    font-size: 60px;
+  }
+  //мобильная навигация
+  .nav-mobile {
+    padding: 20px;
+    display: flex;
+    position: absolute;
+    right: -1000px;
+    transition: 2s;
+    top: calc(100% + 4px);
+    display: flex;
+    flex-direction: column;
+    background-color: #ffffff;
+  }
+  .nav-mobile .header_info {
+    justify-content: flex-start;
+  }
+  .nav-mobile ul {
+    flex-direction: column;
+  }
+  .nav-mobile .nav {
+    display: flex;
+  }
+  .nav-mobile .header_info {
+    display: flex;
+    align-items: flex-start;
+    padding-left: 10px;
+    margin-top: 20px;
+  }
+  .nav-mobile.active {
+    right: 0;
+    transition: 1s;
+    box-shadow: 1px 4px 10px #ccc;
+  }
+  //бургер меню
+  .burger-menu {
+    display: block;
+  }
+  .burger-wrap {
+    width: 30px;
+    height: 15px;
+    position: relative;
+  }
+  .burger-wrap span {
+    display: block;
+    position: absolute;
+    width: 30px;
+    height: 2px;
+    background-color: black;
+    transition: 0.5s;
+  }
+  .burger-wrap .burger-item1 {
+    top: 0;
+  }
+  .burger-wrap .burger-item2 {
+    top: 7px;
+  }
+  .burger-wrap .burger-item3 {
+    top: 15px;
+  }
+  .burger-menu.active .burger-wrap .burger-item1 {
+    transform: rotate(45deg);
+    transition: 0.5s;
+    top: 6px;
+  }
+  .burger-menu.active .burger-wrap .burger-item2 {
+    opacity: 0;
+    transition: 0.5s;
+  }
+  .burger-menu.active .burger-wrap .burger-item3 {
+    transform: rotate(-45deg);
+    top: 6px;
+    transition: 0.5s;
+  }
+}
+@media (max-width: 767px) {
+  //footer
+  .header{
+    height: 70px;
+  }
+  .footer .wrap {
+    flex-direction: column;
+    padding: 30px;
+  }
+  .footer .wrap div {
+    margin-bottom: 40px;
+    text-align: center;
+  }
+  .footer .wrap div.footer_autor {
+    margin-bottom: 0;
+  }
+  
+}
