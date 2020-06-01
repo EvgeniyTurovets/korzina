@@ -515,7 +515,7 @@ body {
 
 .header__phone span {
     font-size: 14px;
-    color: #b4b8c1;
+    color: #d5d5d5;
 }
 
 .header__cart {
@@ -551,11 +551,11 @@ body {
     -webkit-align-items: center;
     -ms-flex-align: center;
     align-items: center;
-    color: #bec5cd;
+    color: #d5d5d5;
 }
 
 .header__cart__wrap:hover {
-    color: #ffffff;
+    color: #f7f7f7;
 }
 
 .header__cart__wrap i {
@@ -654,6 +654,17 @@ body {
 
 .header__mid i {
     color: #4e4e4e;
+}
+
+.main__menu {
+    z-index: 11;
+    position: relative;
+    background-color: #ffffff;
+    padding: 0px 0px 10px 5px;
+}
+
+.mail__left__level1 {
+    z-index: 11;
 }
 
 .header__mid__search2 {
@@ -992,7 +1003,7 @@ body {
 
 .header__menu-catalog {
     position: relative;
-    z-index: 11;
+    z-index: 12;
 }
 
 .header__nav {
@@ -1191,6 +1202,10 @@ body {
         margin: 0 auto;
     }
 
+    .header__menu-catalog.open .header__nav {
+        padding: 15px;
+    }
+
     .categorii__level2 {
         display: none;
     }
@@ -1208,8 +1223,21 @@ body {
     }
 
     .catalog__item {
-        width: -webkit-calc(100% / 3);
-        width: calc(100% / 3);
+        width: -webkit-calc(100% / 4);
+        width: calc(100% / 4);
+    }
+
+    .catalog__item__name {
+        font-size: 12px;
+    }
+
+    .catalog__item__action a {
+        font-size: 12px;
+        padding: 8px;
+    }
+
+    .categorii__title {
+        font-size: 16px;
     }
 
     .header .wrap {
@@ -1246,11 +1274,12 @@ body {
     }
 
     .header__cart {
-        -webkit-box-orient: horizontal;
-        -webkit-box-direction: reverse;
-        -webkit-flex-direction: row-reverse;
-        -ms-flex-direction: row-reverse;
-        flex-direction: row-reverse;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        margin-left: 50px;
     }
 
     .header__right__wrap {
@@ -1270,8 +1299,8 @@ body {
         height: max-content;
     }
 
-    .header__cart__wrap {
-        min-width: 140px;
+    .cart__empty {
+        font-size: 12px;
     }
 
     .header__phone a {
@@ -1321,9 +1350,13 @@ body {
         justify-content: flex-end;
     }
 
+    .header__phone {
+        padding-top: 18px;
+    }
+
     .header__lang {
-        margin-top: 8px;
-        margin-bottom: 0;
+        margin-top: 0px;
+        margin-bottom: 17px;
     }
 
     .main__left {
@@ -1336,10 +1369,6 @@ body {
 
     .header__right {
         width: 67%;
-    }
-
-    .header__cart__wrap {
-        min-width: 120px;
     }
 
     .main__right {
