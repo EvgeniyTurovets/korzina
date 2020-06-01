@@ -859,6 +859,7 @@ body {
 
 .catalog__title {
     font-size: 18px;
+    font-weight: 600;
     margin-bottom: 10px;
 }
 
@@ -1393,6 +1394,10 @@ body {
     justify-content: space-between;
 }
 
+.catalog .main__catalog {
+    padding-top: 20px;
+}
+
 .filter__select span {
     font-size: 12px;
 }
@@ -1727,6 +1732,10 @@ body {
 }
 
 @media (max-width: 560px) {
+    .catalog .main__catalog {
+        padding-top: 0px;
+    }
+
     .main__left {
         margin-bottom: 20px;
     }
