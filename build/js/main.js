@@ -48,4 +48,29 @@ $(function(){
         $('.overlay').toggleClass('active')
        })
     }
+    $(".dropdown").click(function() {
+        let menu = $(this).find('.dropdown__menu');
+        if (menu) {
+          menu.toggleClass("dropdown__menu--active");
+        }
+      });
+    if($('.catalog').length){
+        if($(window).width() < 992 ){
+            $('.filter__wraper').append( $('.filter__select') );
+        }
+        $('.filter__toggle').on('click', function(){
+            $('.filter__toggle').toggleClass('open')
+            $('.filter').slideToggle()
+            
+        })
+        $(window).resize(function(){
+            if($(window).width() < 992 ){
+                $('.filter__wraper').append( $('.filter__select') );
+            }
+            if($(window).width() > 991 ){
+                $('.catalog__top').append( $('.filter__select') );
+            }
+
+        })
+    }
 })
