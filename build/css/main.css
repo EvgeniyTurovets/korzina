@@ -970,10 +970,6 @@
     .tovar__photo .slick-dots li button:before {
         opacity: 0;
     }
-
-    .tovar__photo {
-        display: none;
-    }
 }
 
 * {
