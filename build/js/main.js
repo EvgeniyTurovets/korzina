@@ -4,16 +4,18 @@ $(function(){
         $('.header__menu-catalog').on('click', function(){
             $(this).toggleClass('open')
             $('.overlay').toggleClass('active')
+            $('.main__menu').toggleClass('z-index-edit')
             $('.nav__level2').removeClass('open')
             $('.nav__level2').eq(0).addClass('open')
             $('.nav__level1').removeClass('grey-nav')
             $('.nav__level1').eq(0).addClass('grey-nav')
+            
         })
 
         $('.overlay').on('click', function(){
             $('.header__menu-catalog').toggleClass('open')
             $('.overlay').toggleClass('active')
-        
+            $('.main__menu').removeClass('z-index-edit')
         })
          
          $('.nav__level1').mouseenter(function(){
@@ -98,9 +100,20 @@ $(function(){
         })
     }
     if($('.tovar').length){
+        
         $('.tovar__photo__main').slick({
             fade: true,
-            asNavFor: '.tovar__photo__nav'
+            asNavFor: '.tovar__photo__nav',
+            responsive: [
+                {
+                  breakpoint: 767,
+                  settings: {
+                    fade: false,
+                    infinite: true,
+                    dots: true
+                  }
+                },
+            ]
         })
         $('.tovar__photo__nav').slick({
             asNavFor: '.tovar__photo__main',
@@ -113,5 +126,29 @@ $(function(){
         $(this).closest('.about').toggleClass('open')
         $(this).closest('.about').find('.about__wrap').slideToggle(300)
     })
-    
+    $('#addcoment').click(function(){
+        $('.cooment__view').fadeOut(300)
+        
+        setTimeout(function(){$('.comment__add').fadeIn(300)},300)
+    })
+    $('#viewcoment').click(function(){
+        $('.comment__add').fadeOut(300)
+        
+        setTimeout(function(){$('.cooment__view').fadeIn(300)},300)
+    })
+    $('.rating-area label').eq(0).click(function(){
+        $('.star__num span').eq(0).text('5')
+    })
+    $('.rating-area label').eq(1).click(function(){
+        $('.star__num span').eq(0).text('4')
+    })
+    $('.rating-area label').eq(2).click(function(){
+        $('.star__num span').eq(0).text('3')
+    })
+    $('.rating-area label').eq(3).click(function(){
+        $('.star__num span').eq(0).text('2')
+    })
+    $('.rating-area label').eq(4).click(function(){
+        $('.star__num span').eq(0).text('1')
+    })
 })
