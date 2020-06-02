@@ -454,8 +454,8 @@
 
 .info__about {
     font-size: 13px;
-    line-height: 1.2;
-    max-width: 80%;
+    line-height: 1.4;
+    max-width: 85%;
     margin-bottom: 20px;
 }
 
@@ -2490,11 +2490,5 @@ body {
 
     .about p {
         font-size: 12px;
-    }
-}
-
-@media (max-width: 350px) {
-    .categorii__title {
-        font-size: 10px;
     }
 }
