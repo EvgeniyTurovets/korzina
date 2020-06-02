@@ -102,4 +102,8 @@ $(function(){
         })
        
     }
+    $('.about span').click(function(){
+        $(this).closest('.about').find('.about__wrap').slideToggle(300)
+    })
+    
 })
