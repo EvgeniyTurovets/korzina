@@ -459,6 +459,19 @@
     margin-bottom: 20px;
 }
 
+.info__unic {
+    font-size: 14px;
+    color: #2c393f;
+}
+
+.info__unic span {
+    text-transform: uppercase;
+}
+
+.info__unic li {
+    list-style: none;
+}
+
 * {
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
@@ -1900,6 +1913,7 @@ body {
     .dropdown__menu {
         font-size: 14px;
         min-width: 170px;
+        z-index: 2;
     }
 }
 
