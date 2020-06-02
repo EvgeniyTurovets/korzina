@@ -1773,7 +1773,7 @@ body {
     -ms-flex-pack: justify;
     justify-content: space-between;
     bottom: 0px;
-    padding: 15px 0;
+    padding: 10px 0;
     background-color: #e1e1e1;
     margin-top: -15px;
 }
@@ -1816,8 +1816,8 @@ body {
 .filter__search button {
     border: 0;
     cursor: pointer;
-    padding: 8px 15px;
-    color: #ffffff;
+    font-weight: 600;
+    padding: 10px 20px;
     background-color: #fcbf05;
 }
 
@@ -1914,6 +1914,14 @@ body {
         font-size: 14px;
         min-width: 170px;
         z-index: 2;
+    }
+
+    .filter__button {
+        padding: 5px;
+    }
+
+    .filter__search button {
+        padding: 12px 25px;
     }
 }
 
