@@ -61,7 +61,16 @@ $(function(){
           menu.toggleClass("dropdown__menu--active");
         }
     });
-
+    $(document).mouseup(function (e){ // событие клика по веб-документу
+		var div = $(".dropdown"); // тут указываем ID элемента
+		if (!div.is(e.target) // если клик был не по нашему блоку
+		    && div.has(e.target).length === 0) { // и не по его дочерним элементам
+            let menu = div.find('.dropdown__menu');
+            if (menu) {
+                menu.removeClass("dropdown__menu--active");
+            }
+		}
+	});
     if($('.catalog').length){
         if($(window).width() < 992 ){
             $('.filter__wraper').append( $('.filter__select') );
