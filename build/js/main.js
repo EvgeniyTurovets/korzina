@@ -1,9 +1,11 @@
 $(function(){
     if($(window).width() > 767){
+
         $('.header__menu-catalog').on('click', function(){
             $(this).toggleClass('open')
              $('.overlay').toggleClass('active')
          })
+
          $('.overlay').on('click', function(){
              $('.header__menu-catalog').toggleClass('open')
              $('.overlay').toggleClass('active')
@@ -20,40 +22,46 @@ $(function(){
             $(this).find('.nav__level2').addClass('open')
             $('.overlay').addClass('active')
         })
+
         $('.mail__left__level1').mouseleave(function(){
             $('.nav__level2').removeClass('open')
             $('.overlay').removeClass('active')
         })
-         $('.nav__level2').mouseleave(function() {
-             $('.nav__level2').removeClass('open')
-         })
+
+        $('.nav__level2').mouseleave(function() {
+            $('.nav__level2').removeClass('open')
+        })
          
-         $('.nav__level1').on('touchend', function(){
+        $('.nav__level1').on('touchend', function(){
             
-             $('.nav__level2').removeClass('open')
-             $(this).find('.nav__level2').addClass('open')
-             return false;
+            $('.nav__level2').removeClass('open')
+            $(this).find('.nav__level2').addClass('open')
+            return false;
      
-         })
+        })
     }
+
     if($(window).width() <= 767){
-       $('.menu-catalog__burger').on('touchend', function(){
+       $('.menu-catalog__burger').click(function(){
         $('.header__mob').toggleClass('active')
         $('.mob__menu').slideToggle(200)
         $('.overlay').toggleClass('active')
        })
-       $('.header__mob__phone').on('touchend', function(){
+       $('.header__mob__phone').click(function(){
         $('.header__mob').toggleClass('active')
         $('.mob__menu').slideToggle(200)
         $('.overlay').toggleClass('active')
        })
     }
+
+
     $(".dropdown").click(function() {
         let menu = $(this).find('.dropdown__menu');
         if (menu) {
           menu.toggleClass("dropdown__menu--active");
         }
-      });
+    });
+
     if($('.catalog').length){
         if($(window).width() < 992 ){
             $('.filter__wraper').append( $('.filter__select') );
@@ -72,5 +80,17 @@ $(function(){
             }
 
         })
+    }
+    if($('.tovar').length){
+        $('.tovar__photo__main').slick({
+            fade: true,
+            asNavFor: '.tovar__photo__nav'
+        })
+        $('.tovar__photo__nav').slick({
+            asNavFor: '.tovar__photo__main',
+            slidesToShow: 3,
+            focusOnSelect: true
+        })
+       
     }
 })
