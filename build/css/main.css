@@ -2092,8 +2092,8 @@ body {
     }
 
     .nav__level2.open {
-        width: 77vw;
-        right: -77vw;
+        width: 75vw;
+        right: -75vw;
     }
 
     .catalog__item__action a {
