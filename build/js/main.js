@@ -3,20 +3,22 @@ $(function(){
 
         $('.header__menu-catalog').on('click', function(){
             $(this).toggleClass('open')
-             $('.overlay').toggleClass('active')
-         })
+            $('.overlay').toggleClass('active')
+            $('.nav__level2').removeClass('open')
+            $('.nav__level2').eq(0).addClass('open')
+        })
 
-         $('.overlay').on('click', function(){
-             $('.header__menu-catalog').toggleClass('open')
-             $('.overlay').toggleClass('active')
-            
-         })
+        $('.overlay').on('click', function(){
+            $('.header__menu-catalog').toggleClass('open')
+            $('.overlay').toggleClass('active')
+        
+        })
          
          $('.nav__level1').mouseenter(function(){
-             $('.nav__level1').removeClass('grey-nav')
-             $(this).addClass('grey-nav')
-             $('.nav__level2').removeClass('open')
-             $(this).find('.nav__level2').addClass('open')
+            $('.nav__level1').removeClass('grey-nav')
+            $(this).addClass('grey-nav')
+            $('.nav__level2').removeClass('open')
+            $(this).find('.nav__level2').addClass('open')
          })
 
          $('.mail__left__level1').mouseenter(function(){
