@@ -493,11 +493,16 @@
     -webkit-align-items: center;
     -ms-flex-align: center;
     align-items: center;
+    cursor: pointer;
     font-weight: 600;
     width: -webkit-max-content;
     width: -moz-max-content;
     width: max-content;
     color: #346ac0;
+    margin-top: 10px;
+    -webkit-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: 0.3s;
 }
 
 .more-content span {
@@ -509,7 +514,19 @@
 
 .more-content i {
     font-size: 10px;
-    margin-left: 2px;
+    margin-left: 4px;
+    margin-top: 1px;
+}
+
+.more-content .fa-chevron-up {
+    display: none;
+}
+
+.more-content:hover {
+    -webkit-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: 0.3s;
+    color: #18448a;
 }
 
 * {
