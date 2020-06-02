@@ -13,24 +13,27 @@ $(function(){
          })
          
          $('.nav__level1').mouseenter(function(){
+             $('.nav__level1').removeClass('grey-nav')
+             $(this).addClass('grey-nav')
              $('.nav__level2').removeClass('open')
              $(this).find('.nav__level2').addClass('open')
          })
 
          $('.mail__left__level1').mouseenter(function(){
+            $('.mail__left__level1').removeClass('grey-nav')
+            $(this).addClass('grey-nav')
             $('.nav__level2').removeClass('open')
             $(this).find('.nav__level2').addClass('open')
             $('.overlay').addClass('active')
         })
 
         $('.mail__left__level1').mouseleave(function(){
+            $('.mail__left__level1').removeClass('grey-nav')
             $('.nav__level2').removeClass('open')
             $('.overlay').removeClass('active')
         })
 
-        $('.nav__level2').mouseleave(function() {
-            $('.nav__level2').removeClass('open')
-        })
+        
          
         $('.nav__level1').on('touchend', function(){
             

@@ -912,11 +912,14 @@ body {
     z-index: 11;
     position: relative;
     background-color: #ffffff;
-    padding: 0px 0px 10px 5px;
 }
 
 .mail__left__level1 {
     z-index: 11;
+}
+
+.grey-nav {
+    background-color: #e9e7e7;
 }
 
 .header__mid__search2 {
@@ -958,11 +961,11 @@ body {
     display: -ms-flexbox;
     display: flex;
     width: 100%;
+    padding: 10px 5px;
     -webkit-box-align: center;
     -webkit-align-items: center;
     -ms-flex-align: center;
     align-items: center;
-    margin-top: 10px;
     -webkit-box-pack: justify;
     -webkit-justify-content: space-between;
     -ms-flex-pack: justify;
@@ -1020,7 +1023,11 @@ body {
 }
 
 .categorii__title__mob {
-    display: none;
+    width: 100%;
+    text-align: center;
+    font-size: 25px;
+    margin-bottom: 30px;
+    font-weight: 600;
 }
 
 .categorii__item {
@@ -1307,7 +1314,6 @@ body {
     left: 0;
     top: -webkit-calc(100% + 6px);
     top: calc(100% + 6px);
-    padding: 10px;
     width: 100%;
     padding-right: 0;
     position: absolute;
@@ -1328,12 +1334,12 @@ body {
     -webkit-align-items: center;
     -ms-flex-align: center;
     align-items: center;
-    padding: 10px 0;
+    padding: 10px 5px;
     -webkit-box-pack: justify;
     -webkit-justify-content: space-between;
     -ms-flex-pack: justify;
     justify-content: space-between;
-    padding-right: 20px;
+    padding-right: 25px;
 }
 
 .nav__level1 i {
