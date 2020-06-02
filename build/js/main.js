@@ -103,6 +103,7 @@ $(function(){
        
     }
     $('.about span').click(function(){
+        $(this).closest('.about').toggleClass('open')
         $(this).closest('.about').find('.about__wrap').slideToggle(300)
     })
     

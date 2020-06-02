@@ -1184,6 +1184,22 @@ body {
     border-bottom: 1px dashed;
 }
 
+.about span .fa-chevron-up {
+    display: none;
+}
+
+.about.open span {
+    color: #6c7482;
+}
+
+.about.open span .fa-chevron-up {
+    display: inline-block;
+}
+
+.about.open span .fa-chevron-down {
+    display: none;
+}
+
 .about span:hover {
     color: #18448a;
 }
