@@ -6,6 +6,8 @@ $(function(){
             $('.overlay').toggleClass('active')
             $('.nav__level2').removeClass('open')
             $('.nav__level2').eq(0).addClass('open')
+            $('.nav__level1').removeClass('grey-nav')
+            $('.nav__level1').eq(0).addClass('grey-nav')
         })
 
         $('.overlay').on('click', function(){
