@@ -284,6 +284,22 @@
   font-weight: 700;
 }
 
+.info__more {
+    display: none;
+    padding-top: 20px;
+}
+
+.nocoment {
+    font-size: 14px;
+    color: #696969;
+    text-align: center;
+    padding: 30px;
+}
+
+.comment__more {
+    display: none;
+}
+
 .tovar {
     width: 100%;
     display: -webkit-box;
@@ -303,6 +319,7 @@
     height: 100%;
     -o-object-fit: cover;
     object-fit: cover;
+    max-width: 100%;
 }
 
 .tovar__photo__main div:focus {
@@ -456,7 +473,7 @@
 .info__about {
     font-size: 13px;
     line-height: 1.4;
-    max-width: 85%;
+    max-width: 100%;
     margin-bottom: 20px;
 }
 
@@ -504,6 +521,19 @@
     -webkit-transition: 0.3s;
     -o-transition: 0.3s;
     transition: 0.3s;
+}
+
+.more-content.grey-more span {
+    color: #6c7482;
+}
+
+.more-content.grey-more .fa-chevron-down {
+    display: none;
+}
+
+.more-content.grey-more .fa-chevron-up {
+    display: inline-block;
+    color: #6c7482;
 }
 
 .more-content span {
@@ -788,6 +818,7 @@
     height: 75px;
     font-size: 14px;
     color: #545454;
+    border: 1px solid #8b8f92;
     margin-bottom: 8px;
 }
 
@@ -1052,6 +1083,10 @@
 
     .info__price {
         padding: 7px 15px;
+    }
+
+    .nocoment {
+        padding: 15px 0;
     }
 }
 

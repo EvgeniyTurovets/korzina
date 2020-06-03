@@ -103,6 +103,9 @@ $(function(){
         if($(window).width() < 768){
             $('.footer').css('padding-bottom', '100px')
         }
+        if($('.nocoment').length){
+            $('.tovar__coment').css('min-height', '200px')
+        }
         $('.tovar__photo__main').slick({
             fade: true,
             asNavFor: '.tovar__photo__nav',
@@ -152,5 +155,14 @@ $(function(){
     })
     $('.rating-area label').eq(4).click(function(){
         $('.star__num span').eq(0).text('1')
+    })
+
+    $('.tovar__info .more-content').click(function(){
+        $(this).toggleClass('grey-more')
+        $('.info__more').slideToggle()
+    })
+    $('.cooment__view .more-content').click(function(){
+        $(this).toggleClass('grey-more')
+        $('.comment__more').slideToggle()
     })
 })
