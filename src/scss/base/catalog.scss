@@ -2,8 +2,11 @@
     display: flex;
     justify-content: space-between;
   }
+  .catalog .main__catalog{
+      padding-top: 20px;
+  }
   .filter__select span{
-    font-size: 12px;
+    font-size: 14px;
   }
   
   .dropdown {
@@ -16,7 +19,7 @@
       padding: 10px 10px 10px 10px;
       background: transparent; 
       color: #270700;
-      font-size: 12px;
+      font-size: 13px;
       border: none;
       border-radius: 4px;
       cursor: pointer;
@@ -157,12 +160,13 @@
     display: flex;
     justify-content: space-between;
     bottom: 0px;
-    padding: 15px 0;
+    padding: 10px 0;
     background-color: #e1e1e1;
     margin-top: -15px;
   }
   .filter__button__count{
     width: 50%;
+    line-height: 1.2;
     display: flex;
     flex-direction: column;
     font-size: 14px;
@@ -173,13 +177,14 @@
     width: 50%;
     align-items: center;
     display: flex;
+    
     justify-content: center;
   }
   .filter__search button{
     border: 0;
     cursor: pointer;
-    padding: 8px 15px;
-    color: #ffffff;
+    font-weight: 600;
+    padding: 10px 20px;
     background-color: #fcbf05;
   }
   .filter__search button:hover{
@@ -189,6 +194,7 @@
     display: none;
   }
   @media(max-width: 991px){
+    
     .catalog .main__left{
       display: block;
       width: 100%;
@@ -245,10 +251,20 @@
     .dropdown__menu{
       font-size: 14px;
       min-width: 170px;
+      z-index: 2;
     }
-    
+    .filter__button{
+      padding: 5px;
+    }
+    .filter__search button{
+      padding: 12px 40px;
+      font-size: 14px;
+    }
   }
   @media(max-width: 560px){
+    .catalog .main__catalog{
+        padding-top: 0px;
+    }
     .main__left{
       margin-bottom: 20px;
     }
