@@ -100,7 +100,9 @@ $(function(){
         })
     }
     if($('.tovar').length){
-        
+        if($(window).width() < 768){
+            $('.footer').css('padding-bottom', '100px')
+        }
         $('.tovar__photo__main').slick({
             fade: true,
             asNavFor: '.tovar__photo__nav',
