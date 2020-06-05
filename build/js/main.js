@@ -310,5 +310,22 @@ $(function(){
     $('.header__corzina__mob').click(function(){
        $('.mob-corzina').slideToggle()
     })
+    if($('.korzina').length && $(window).width() < 767){
+        $('.app').css('overflow-x', 'hidden')
+    }
+
+    //select
+    $('.input-drop').focus(function(){
+        $(this).parent('.input-select').addClass('revers')
+        $(this).parent('.input-select').find('.select-wrap').slideDown(200)
+    })
+    $('.input-drop').focusout(function(){
+        $(this).parent('.input-select').removeClass('revers')
+        $(this).parent('.input-select').find('.select-wrap').slideUp(200)
+    })
+    $('.select-wrap li').click(function(){
+        let optionValue = $(this).text()
+        $(this).parents('.input-select').find('.input-drop').val(optionValue)
+    })
     
 })
