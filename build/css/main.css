@@ -3432,7 +3432,9 @@ input.error {
   .korzina__data__pricend {
     font-size: 25px; }
   .korzina__submite {
-    font-size: 18px; } }
+    font-size: 18px; }
+  .select-wrap {
+    padding: 0; } }
 
 .mob {
   display: none; }
