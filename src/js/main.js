@@ -326,6 +326,8 @@ $(function(){
         $(this).parent('.input-select').removeClass('revers')
         $(this).parent('.input-select').find('.select-wrap').slideUp(100)
     })
-    
+    $('.input-select span').click(function(){
+        $(this).parent('.input-select').find('.select-wrap').slideUp(100)
+    })
     
 })

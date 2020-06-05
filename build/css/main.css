@@ -2719,6 +2719,21 @@ body {
     flex: 1;
 }
 
+.input-select span {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    cursor: pointer;
+    z-index: -1;
+    display: block;
+    width: 20px;
+    height: 20px;
+}
+
+.input-select.revers span {
+    z-index: 1;
+}
+
 .input-select:after {
     position: absolute;
     content: "";
