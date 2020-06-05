@@ -307,4 +307,8 @@ $(function(){
         }
     })
     
+    $('.header__corzina__mob').click(function(){
+       $('.mob-corzina').slideToggle()
+    })
+    
 })

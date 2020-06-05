@@ -1,0 +1,653 @@
+.header__corzina{
+    background-color: #7c8896;
+    padding-bottom: 6px;
+    padding-top: 6px;
+    color: #ffffff;
+  }
+  .header__corzina .wrap{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .korzina__logo{
+    font-size: 30px;
+    color: #ffffff;
+    font-weight: 600;
+    margin-top: 4px;
+  }
+  .korzina__tel{
+    display: flex;
+    flex-direction: column;
+  }
+  .korzina__tel a {
+    color: #ffffff;
+    font-size: 18px;
+    margin-bottom: 9px;
+    font-weight: 600;
+  }
+  .korzina__tel span {
+    font-size: 14px;
+    color: #d5d5d5;
+  }
+  .header__corzina .header__corzina__mob{
+    display: none;
+  }
+  .header__corzina .mob-corzina{
+    display: none;
+  }
+  @media(max-width: 767px){
+    .header__corzina .header__corzina__mob{
+      display: flex;
+      border-top: 0;
+      left: 0;
+      right: 0;
+      color: #b8c0cb;
+    }
+    .header__corzina .mob__menu__bot{
+      border-top: 0;
+    }
+    .mob-corzina{
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      padding: 15px;
+      right: 0;
+      padding-top: 0;
+      background-color: #ffffff;
+      transform: translateY(100%);
+    }
+    .header__corzina .mob__menu__bot a {
+      display: block;
+      margin-left: 5px;
+      margin-top: 20px;
+      font-weight: 600;
+      color: rgba(0, 0, 0, 0.9);
+    }
+    .korzina__tel{
+      display: none;
+      
+    }
+    .korzina__logo{
+      font-size: 20px;
+      margin-top: 0;
+    }
+    .header__corzina{
+      padding: 10px 0;
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 11;
+    }
+  }
+  .korzina{
+    display: flex;
+    width: 100%;
+    min-height: 90vh;
+    padding-top: 20px;
+  }
+  .korzina__step{
+    width: 475px;
+  }
+  .step_name{
+    font-size: 14px;
+    color: #5f5f5f;
+    padding-bottom: 5px;
+    border-bottom: 1px solid #5f5f5f;
+  }
+  
+  .step__wrap{
+    padding: 20px 0;
+  }
+  .step__wrap > span{
+    color: #494949;
+    font-size: 18px;
+    font-weight: 700;
+    display: block;
+    margin-bottom: 20px;
+  }
+  .step2 .step__title{
+    color: #9a9a9a;
+  }
+  .step2 .step_name{
+    color: #9a9a9a;
+  }
+  .step-two .step2 .step_name{
+    color: #5f5f5f;
+  }
+  .step-two .step2 .step__title{
+    color: #494949;
+  }
+  .step__title{
+    color: #494949;
+    font-size: 18px;
+    font-weight: 700;
+    display: block;
+    margin-top: 20px;
+  }
+  .step__wrap label{
+    font-size: 14px;
+    min-width: 165px;
+    display: inline-block;
+    color: #494949;
+  }
+  .step1 .step__wrap label{
+    min-width: 100px;
+  }
+  .step__wrap .form__item.important label:after{
+    content: "*";
+    color: red;
+  }
+  .step__wrap input{
+    border: 1px solid #8c8e8d;
+    padding: 7px 10px;
+    color: #494949;
+    width: 100%;
+  }
+  .step__wrap .form__item{
+    margin-bottom: 5px;
+    display: flex;
+    align-items: center;
+  }
+  .step__wrap button{
+    width: 170px;
+    padding: 10px 5px;
+    font-weight: 600;
+    background-color: $ye;
+    color: #494949;
+    border: 0;
+    margin-left: 100px;
+    cursor: pointer;
+  }
+  
+  .step__wrap button:hover{
+    box-shadow: 0px 0px 7px #fcbf05;
+  }
+  .step__wrap .control{
+    padding-top: 5px;
+    margin-bottom: 20px;
+  }
+  .form__group{
+    margin-bottom: 20px;
+  }
+  
+  /* The container must be positioned relative: */
+  .custom-select {
+    position: relative;
+    width: 100%;
+  }
+  
+  .custom-select select {
+    display: none; /*hide original SELECT element: */
+  }
+  
+  .select-selected {
+    background-color: transparent;
+    
+  }
+  
+  /* Style the arrow inside the select element: */
+  .select-selected:after {
+    position: absolute;
+    content: "";
+    top: 14px;
+    right: 10px;
+    width: 0;
+    height: 0;
+    border: 6px solid transparent;
+    border-color: #9d9d9d transparent transparent transparent;
+  }
+  
+  /* Point the arrow upwards when the select box is open (active): */
+  .select-selected.select-arrow-active:after {
+    border-color: transparent transparent #9d9d9d transparent;
+    top: 7px;
+  }
+  
+  /* style the items (options), including the selected item: */
+  .select-items div,.select-selected {
+    color: #464646;
+    padding: 10px 10px;
+    font-size: 14px;
+    border: 1px solid #8c8e8d;
+    cursor: pointer;
+  }
+  
+  /* Style items (options): */
+  .select-items {
+    position: absolute;
+    background-color: #ffffff;
+    top: 100%;
+    left: 0;
+    right: 0;
+    z-index: 99;
+  }
+  
+  /* Hide the items when the select box is closed: */
+  .select-hide {
+    display: none;
+  }
+  
+  .select-items div:hover, .same-as-selected {
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+  
+  .form__item.textarea{
+    align-items: flex-start;
+  }
+  .form__item.textarea label{
+    margin-top: 10px;
+  }
+  .form__item textarea{
+    width: 100%;
+    height: 100px;
+    resize: none;
+    border: 1px solid #8c8e8d;
+    padding: 10px;
+    font-size: 14px;
+    color: #393939;
+    font-family: 'OpenSans',sans-serif;
+    font-weight: 400;
+  }
+  
+  .korzina__tovar h1{
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
+  .korzina__tovar{
+    position: sticky;
+    top: 0;
+    padding-left: 40px;
+    flex: 1;
+    height: max-content;
+    color: #393939;
+  }
+  .korzina__item{
+    display: flex;
+    margin-bottom: 20px;
+  }
+  .korzina__item__img{
+    height: 83px;
+    margin-right: 20px;
+    width: 83px;
+    display: flex;
+    overflow: hidden;
+    justify-content: center;
+    align-items: flex-start;
+  }
+  .korzina__item__img img{
+    max-width: 100%;
+  
+  }
+  .korzina__info{
+    padding-top: 2px;
+  }
+  .korzina__name{
+   color: #619498;
+   font-size: 14px;
+   display: block;
+   max-width: 250px;
+  }
+  .korzina__name:hover{
+    color: #22c1cc;
+  }
+  .korzina__price{
+    margin-top: 10px;
+    font-size: 14px;
+  }
+  .korzina__price__value{
+    font-weight: 600;
+    font-size: 16px;
+    margin-right: 5px;
+  }
+  .korzina__count{
+    display: flex;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+  
+  .korzina__count input{
+    width: 30px;
+    font-size: 14px;
+    height: 30px;
+    border: 1px solid #d0d0d0;
+  }
+  .korzina__count button{
+    background-color: transparent;
+    border: 0;
+    font-size: 22px;
+    color: #9b9b9b;
+    cursor: pointer;
+    padding: 5px 10px;
+  }
+  .korzina__count button:last-child{
+    color: #466f9b;
+  }
+  .count__wrap{
+    display: flex;
+    align-items: center;
+  }
+  .raz {
+    all: unset;
+    -moz-appearance: textfield;
+    width: 3em;
+    text-align: center;
+  }
+  .raz::-webkit-inner-spin-button { 
+    display: none;
+  }
+  
+  .korzina__count  input::-webkit-outer-spin-button,
+  .korzina__count  input::-webkit-inner-spin-button {
+        /* display: none; <- Crashes Chrome on hover */
+        -webkit-appearance: none;
+        margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
+    }
+  .count__sum{
+    display: flex;
+    align-items: center;
+    width: 83px;
+    justify-content: flex-end;
+  }
+  .count__sum{
+    font-size: 14px;
+  }
+  .count__sum__value{
+    font-size: 16px;
+    font-weight: 600;
+    margin-right: 5px;
+  }
+  .korzina__delete{
+    display: flex;
+    align-items: center;
+  }
+  .korzina__delete span{
+    font-size: 14px;
+    cursor: pointer;
+    background-color: #f7f7f7;
+    padding: 7px 15px;
+    height: max-content;
+  }
+  
+  
+  .korzina__wrap{
+    width: max-content;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #c6c6c6;
+  }
+  .korsina__data__item{
+    font-size: 14px;
+    display: none;
+    margin-bottom: 10px;
+    font-weight: 700;
+  }
+  .step-two .korsina__data__item{
+    display: block;
+  }
+  .korsina__data__item span{
+    margin-left: 10px;
+    font-weight: 500;
+  }
+  .korzina__data__pricend{
+    font-size: 25px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-weight: 700;
+  }
+  .korzina__submite{
+    background-color: $ye;
+    border: 0;
+    font-weight: 600;
+    font-size: 20px;
+    color: #393939;
+    padding: 10px 30px;
+    margin-bottom: 20px;
+    cursor: pointer;
+  }
+  .korzina__submite:hover{
+    box-shadow: 0px 0px 7px #fcbf05;
+  }
+  
+  .step2 .step__wrap{
+    display: none;
+  }
+  input.error{
+    background-color: #fcc9ce;
+  }
+  .step__edit{
+    display: none;
+  }
+  .step__edit span{
+    font-size: 18px;
+    line-height: 1.2;
+    font-weight: 600;
+    color: #393939;
+  }
+  .step__edit{
+    padding: 10px 0 30px 0;
+  }
+  .edit__btn{
+    cursor: pointer;
+    color: #4170ca;
+    margin-top: 10px;
+    width: max-content;
+    font-size: 14px;
+    border-bottom: 1px dashed;
+  }
+  .edit__btn:hover{
+    color: #495a79;
+  }
+  @media(max-width: 1199px) and (min-width: 992px){
+    .korzina__wrap{
+      width: 100%;
+    }
+    .korzina__step{
+      width: 335px;
+    }
+    .step__wrap label{
+      min-width: 130px;
+      font-size: 12px;
+    }
+    .korzina__count{
+      margin-left: 10px;
+      margin-right: 10px;
+    }
+    .form__item textarea{
+      font-size: 12px;
+    }
+    .select-items div, .select-selected{
+      padding-right: 24px;
+      font-size: 12px;
+    }
+    .korzina__name{
+      font-size: 12px;
+      max-width: 194px;
+    }
+  }
+  @media(max-width: 991px){
+    .korzina{
+      flex-direction: column;
+    }
+    .korzina__wrap{
+     width: 100%;
+    }
+    .korzina__step{
+      width: 100%;
+    }
+    .korzina__tovar{
+      width: 100%;
+      padding-left: 0;
+    }
+    .korzina__item{
+      justify-content: space-between;
+    }
+    .korzina__info{
+      flex: 1;
+    }
+    .korzina__name{
+      max-width: max-content;
+    }
+    .korzina__count {
+      margin-left: 20px;
+      margin-right: 30px;
+    }
+    .step__wrap input{
+      max-width: 350px;
+    }
+    .custom-select{
+      max-width: 350px;
+    }
+    
+    .step2{
+      display: none;
+    }
+    .step-two .step2{
+      display: block;
+    }
+  }
+  @media(max-width: 767px){
+    .korzina__item__img{
+      min-width: 83px;
+      min-height: 83px;
+    }
+    .korzina__count{
+      margin: 0 10px;
+    }
+    .korzina__name{
+      font-size: 12px;
+    }
+    .korzina__price__value{
+      font-size: 14px;
+    }
+    .count__sum{
+      font-size: 12px;
+    }
+    .count__sum__value{
+      font-size: 14px;
+    }
+    .korzina__delete span{
+      font-size: 12px;
+      padding: 5px 10px;
+    } 
+    .korzina__data__pricend{
+      font-size: 25px;
+    }
+    .korzina__submite{
+      font-size: 18px;
+    }
+  }
+  .mob{
+    display: none;
+  }
+  @media(max-width: 560px){
+    .korzina__count input{
+      width: 25px;
+      height: 25px;
+    }
+    .mob{
+      white-space: nowrap;
+      display: inline-block;
+    }
+    .count__sum{
+      margin-top: 5px;
+    }
+    .korzina__price{
+      margin-top: 15px;
+    }
+    .step__wrap label{
+      font-size: 12px;
+      min-width: 130px;
+    }
+    .select-items div, .select-selected{
+      font-size: 12px;
+    }
+    .form__item textarea{
+      font-size: 12px;
+    }
+    .step__edit span{
+      font-size: 16px;
+    }
+    .step__wrap button{
+      margin-left: 100px;
+    }
+    .korzina__delete span{
+      font-size: 0;
+      background-color: transparent;
+    }
+    .korzina__delete span:before{
+      content: "x";
+      color: red;
+      font-size: 16px;
+    }
+    .korzina__delete{
+      align-items: flex-start;
+    }
+    .korzina__item__img{
+      width: 60px;
+      height: 60px;
+      min-width: 60px;
+      min-height: 60px;
+    }
+    .korzina__count{
+      flex-direction: column;
+    }
+    .count__sum{
+      justify-content: center;
+    }
+    .korzina__item__img {
+      margin-right: 10px;
+    }
+  }
+  @media(max-width: 380px){
+    .step__wrap button{
+      width: 130px;
+      margin-left: 75px;
+    }
+    .step__wrap label{
+      min-width: 105px;
+    }
+    .step1 .step__wrap label{
+      min-width:75px;
+    }
+    .korzina__name{
+      font-size: 11px;
+      max-height: 24px;
+      overflow: hidden;
+    }
+    .count__sum__value{
+      font-size: 12px;
+    }
+    .count__wrap{
+      margin-bottom: 5px;
+    }
+    .korzina__count input{
+      font-size: 12px;
+      width: 23px;
+      height: 23px;
+    }
+    .korzina__count button{
+      font-size: 18px;
+    }
+    .korzina__item__img {
+      width: 50px;
+      height: 50px;
+      min-width: 50px;
+      min-height: 50px;
+    }
+    .korzina__count{
+      margin: 0 5px;
+    }
+    .korzina__price {
+      font-size: 12px;
+    }
+    .korzina__price__value {
+      font-size: 12px;
+    }
+    .korzina__data__pricend {
+      font-size: 20px;
+    }
+  }
+  
+  
+  
