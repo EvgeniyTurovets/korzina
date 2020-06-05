@@ -111,9 +111,11 @@
   }
   .step2 .step_name{
     color: #9a9a9a;
+    border-bottom: 1px solid #9a9a9a;
   }
   .step-two .step2 .step_name{
     color: #5f5f5f;
+    border-color: #5f5f5f;
   }
   .step-two .step2 .step__title{
     color: #494949;
@@ -166,6 +168,9 @@
   .step__wrap .control{
     padding-top: 5px;
     margin-bottom: 20px;
+    -moz-user-select: none;
+-khtml-user-select: none;
+user-select: none;      
   }
   .form__group{
     margin-bottom: 20px;
@@ -209,10 +214,12 @@
     color: #464646;
     padding: 10px 10px;
     font-size: 14px;
-    border: 1px solid #8c8e8d;
+    border: 1px solid #a2a2a2;
     cursor: pointer;
   }
-  
+  .select-items div{
+    border-top: 0;
+  }
   /* Style items (options): */
   .select-items {
     position: absolute;
@@ -402,8 +409,12 @@
     font-size: 20px;
     color: #393939;
     padding: 10px 30px;
+    display: none;
     margin-bottom: 20px;
     cursor: pointer;
+  }
+  .step-two  .korzina__submite{
+    display: block;
   }
   .korzina__submite:hover{
     box-shadow: 0px 0px 7px #fcbf05;
