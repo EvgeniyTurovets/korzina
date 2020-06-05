@@ -315,17 +315,17 @@ $(function(){
     }
 
     //select
+    $('.select-wrap li').click(function(){
+        $(this).parents('.input-select').find('.input-drop').val($(this).text())
+    })
     $('.input-drop').focus(function(){
         $(this).parent('.input-select').addClass('revers')
-        $(this).parent('.input-select').find('.select-wrap').slideDown(200)
+        $(this).parent('.input-select').find('.select-wrap').show()
     })
     $('.input-drop').focusout(function(){
         $(this).parent('.input-select').removeClass('revers')
-        $(this).parent('.input-select').find('.select-wrap').slideUp(200)
+        $(this).parent('.input-select').find('.select-wrap').slideUp(100)
     })
-    $('.select-wrap li').click(function(){
-        let optionValue = $(this).text()
-        $(this).parents('.input-select').find('.input-drop').val(optionValue)
-    })
+    
     
 })

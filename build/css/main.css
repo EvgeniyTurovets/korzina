@@ -2668,6 +2668,16 @@ body {
     border-top: 0;
 }
 
+.select-wrap:before {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 1px;
+    position: absolute;
+    bottom: 0;
+    background-color: #9a9a9a;
+}
+
 /* width */
 .select-wrap::-webkit-scrollbar {
     width: 5px;
@@ -2714,6 +2724,7 @@ body {
     content: "";
     top: 14px;
     right: 10px;
+    z-index: -1;
     width: 0;
     height: 0;
     border: 6px solid transparent;
@@ -2943,6 +2954,7 @@ body {
 }
 
 .step__wrap input {
+    background-color: transparent;
     border: 1px solid #8c8e8d;
     padding: 7px 10px;
     color: #494949;
@@ -3398,6 +3410,8 @@ input.error {
     display: block; } }
 
 @media (max-width: 767px) {
+  .korzina {
+    padding-top: 55px; }
   .korzina__item__img {
     min-width: 83px;
     min-height: 83px; }
