@@ -217,8 +217,12 @@ user-select: none;
     border: 1px solid #a2a2a2;
     cursor: pointer;
   }
-  .select-items div{
+  .select-items{
+    border: 1px solid #a2a2a2;
     border-top: 0;
+  }
+  .select-items div{
+    border: 0;
   }
   /* Style items (options): */
   .select-items {
