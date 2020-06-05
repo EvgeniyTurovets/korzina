@@ -2958,6 +2958,7 @@ body {
     border: 1px solid #8c8e8d;
     padding: 7px 10px;
     color: #494949;
+    z-index: 1;
     width: 100%;
     padding-right: 24px;
 }
