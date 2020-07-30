@@ -839,7 +839,8 @@ body {
 
 .main__catalog {
     padding-top: 40px;
-    overflow-x: hidden;
+    /*overflow-x: hidden;*/
+    overflow: hidden;
 }
 
 .catalog__wraper {
@@ -851,6 +852,16 @@ body {
     -webkit-flex-wrap: wrap;
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
+    text-align: center;
+    width: auto;
+}
+
+.catalog__wraper h5 {
+    display: block;
+    width: 100%;
+    text-align: center;
+    padding-left: 15px;
+    padding-right: 15px;
 }
 
 .catalog__item {
@@ -870,12 +881,18 @@ body {
     -webkit-justify-content: space-between;
     -ms-flex-pack: justify;
     justify-content: space-between;
+    text-align: left;
 }
 
 .catalog__title {
     font-size: 18px;
     font-weight: 600;
-    margin-bottom: 10px;
+    margin-bottom: 0;
+    padding-right: 10px;
+}
+
+.filter__select {
+    white-space: nowrap;
 }
 
 .catalog__item__img {
@@ -1429,6 +1446,8 @@ body {
     -webkit-justify-content: space-between;
     -ms-flex-pack: justify;
     justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
 }
 
 .catalog .main__catalog {
@@ -1882,19 +1901,23 @@ body {
     -ms-flex-pack: center;
     justify-content: center;
 }
-
+.slick-list {
+    min-width: 100% !important;
+}
 .tovar__photo__nav div:focus {
     outline: none;
 }
 
 .tovar__photo__nav__item {
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
+    display: -webkit-box !important;
+    display: -webkit-flex !important;
+    display: -ms-flexbox !important;
     display: flex;
+    justify-content: center;
+    align-items: center;
     margin: 2px;
     cursor: pointer;
-    width: 30%;
+    width: 100%;
 }
 
 .tovar__photo__nav__item img {
@@ -3566,6 +3589,12 @@ input.error {
   .catalog__item__price {
     font-size: 16px; } }
 
+@media (min-width: 1200px) {
+    .catalog__item {
+        width: -webkit-calc(100% / 4);
+        width: calc(100% / 4); }
+}
+
 @media (max-width: 1199px) {
   .wrap {
     width: 960px;
@@ -3583,7 +3612,7 @@ input.error {
     height: 130px; }
   .catalog__item {
     width: -webkit-calc(100% / 4);
-    width: calc(100% / 4); }
+    width: calc(100% / 3); }
   .catalog__item__name {
     font-size: 12px; }
   .catalog__item__action a {
